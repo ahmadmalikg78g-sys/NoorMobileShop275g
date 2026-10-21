@@ -11,4 +11,4 @@ workflows:
         script: gradle assembleDebug
     artifacts:
       - app/build/outputs/**/*.apk
-      
+      instance_type: mac_mini_m2
