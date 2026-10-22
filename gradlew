@@ -1,1 +1,1 @@
-bash gradlew assembleDebug
+./gradlew assembleDebug
