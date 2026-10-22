@@ -9,6 +9,9 @@ workflows:
         script: echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
       - name: Build APK
         script: ./gradlew assembleDebug
-    artifacts: gradle assembleDebug
+artifacts:
+  - build/**/outputs/**/*.apk
+  - build/**/outputs/**/*.aab
+  
       - app/build/outputs/**/*.apk
       
